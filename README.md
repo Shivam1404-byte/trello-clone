@@ -4,12 +4,12 @@ Making a Trello clone which consist of board and list. with tech stack
 
 
 * Backend
-- Nodejs
-- Express
+    Nodejs
+    Express
 
 * Frontend
-- Reatjs
+    Reatjs
 
 * Database
-- Prisma ORM
-- PostgreSQL
+    Prisma ORM
+    PostgreSQL

@@ -37,11 +37,11 @@ export const createListItem = async (req:Request,res:Response)=>{
 }
 
 export const getListItem = async (req:Request,res:Response)=>{
-    const {boardId} = req.body
+    const boardId = req.params.id
     try{        
         const checkBoardId = await prisma.board.findUnique({
             where:{
-                id:boardId
+                id:boardId as string
             }
         })
 
@@ -51,7 +51,7 @@ export const getListItem = async (req:Request,res:Response)=>{
 
         const list = await prisma.list.findMany({
             where:{
-                boardId:boardId
+                boardId:boardId as string
             }
         })
 

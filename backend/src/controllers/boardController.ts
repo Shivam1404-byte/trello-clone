@@ -15,7 +15,7 @@ export const createBoard = async(req:Request,res:Response)=>{
         })
 
         res.status(200).json({
-            Message:"Task Created Successfully"
+            Message:"Board Created Successfully"
         })
     }
     catch(err){
