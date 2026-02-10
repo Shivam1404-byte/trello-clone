@@ -4,5 +4,5 @@ import { createListItem, deleteListItem, getListItem } from "../controllers/list
 export const listRoute = Router()
 
 listRoute.post('/create',createListItem)
-listRoute.get('/get',getListItem)
+listRoute.get('/get/:id',getListItem)
 listRoute.delete('/delete/:id',deleteListItem)
